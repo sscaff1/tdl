@@ -1,0 +1,30 @@
+.root {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.side {
+  flex: 1;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.callToAction {
+  text-decoration: none;
+  height: 100%;
+  display: block;
+  background-color: var(--color-primary);
+  color: var(--text-color-primary);
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin-top: 16px;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
