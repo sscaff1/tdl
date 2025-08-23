@@ -27,9 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${openSans.variable} ${yellowtail.variable}`}>
-        <header>
-          <Nav />
-        </header>
+        <Nav />
         <main>{children}</main>
       </body>
     </html>

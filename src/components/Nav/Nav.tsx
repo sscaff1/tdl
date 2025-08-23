@@ -5,7 +5,7 @@ function Nav() {
     <nav className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <span className={styles.logoText}>Tour de Louisiane</span>
+          <img src="/images/TDL_logo.jpg" alt="Tour de Louisiane" className={styles.logoImage} />
         </div>
 
         <ul className={styles.navLinks}>
