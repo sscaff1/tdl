@@ -1,46 +1,154 @@
-.wrap {
-  overflow: hidden;
-  position: relative;
-  max-width: 900px;
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.stage {
+  margin: 24px 0;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.stageWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .description {
-  font-size: 18px;
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 16px;
-  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
 }
 
 .root {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-top: 56.25%;
-  overflow: visible;
+  height: 100%;
+  background: #f0f0f0;
+  border-radius: 8px;
 }
 
 .map {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
+  border-radius: 8px;
+  border: none;
 }
 
-.title {
-  margin-bottom: 24px;
-  font-size: 48px;
-  font-weight: 600;
-  text-align: center;
-}
+.raceInfo {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 
-.stage {
-  margin: 24px 0;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 600;
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c5aa0;
+    margin: 24px 0 16px 0;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .raceList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      background: #f8f9fa;
+      margin: 12px 0;
+      padding: 16px 20px;
+      border-radius: 8px;
+      border-left: 4px solid #2c5aa0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        background: #f0f2f5;
+      }
+
+      strong {
+        color: #2c5aa0;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .importantNote {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    color: #856404;
+    font-weight: 500;
+
+    strong {
+      color: #d63031;
+      font-weight: 600;
+    }
+
+    .importantLabel {
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .mapReference {
+      color: #2c5aa0;
+      font-weight: 600;
+      text-decoration: underline;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .scheduleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      background: #e8f4fd;
+      margin: 8px 0;
+      padding: 12px 16px;
+      border-radius: 6px;
+      border-left: 3px solid #3498db;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      strong {
+        color: #2c5aa0;
+        font-weight: 600;
+        min-width: 80px;
+      }
+    }
+  }
 }

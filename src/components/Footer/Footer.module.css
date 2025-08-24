@@ -1,0 +1,171 @@
+.footer {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 0 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    padding-bottom: 60px;
+  }
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.description {
+  color: #cccccc;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.eventDetails p {
+  margin: 8px 0;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.eventDetails strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin: 12px 0;
+}
+
+.link {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.contactInfo p {
+  margin: 8px 0;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.contactInfo strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.registrationText {
+  color: #cccccc;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.registrationButton {
+  display: inline-block;
+  background: white;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+  }
+}
+
+.bottomBar {
+  border-top: 1px solid #333333;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright {
+  color: #999999;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bottomLink {
+  color: #999999;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.separator {
+  color: #666666;
+  font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 0 0;
+    margin-top: 60px;
+  }
+
+  .sections {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .bottomContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottomLinks {
+    justify-content: center;
+  }
+}

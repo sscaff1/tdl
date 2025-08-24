@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Yellowtail, Open_Sans } from 'next/font/google';
 import './globals.css';
 import Nav from '../components/Nav/Nav';
+import Footer from '../components/Footer/Footer';
 
 const openSans = Open_Sans({
   variable: '--font-open-sans',
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`${openSans.variable} ${yellowtail.variable}`}>
         <Nav />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

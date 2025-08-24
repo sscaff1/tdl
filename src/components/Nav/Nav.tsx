@@ -1,33 +1,31 @@
+import Link from 'next/link';
 import styles from './Nav.module.css';
+import Image from 'next/image';
 
 function Nav() {
   return (
     <nav className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src="/images/TDL_logo.jpg" alt="Tour de Louisiane" className={styles.logoImage} />
+          <Image
+            src="/images/TDL_logo.jpg"
+            alt="Tour de Louisiane"
+            className={styles.logoImage}
+            width={100}
+            height={100}
+          />
         </div>
 
         <ul className={styles.navLinks}>
           <li>
-            <a href="#" className={styles.navLink}>
+            <Link href="/" className={styles.navLink}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className={styles.navLink}>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.navLink}>
-              Events
-            </a>
-          </li>
-          <li>
-            <a href="#" className={styles.navLink}>
-              Contact
-            </a>
+            <Link href="/stages" className={styles.navLink}>
+              Schedule & Maps
+            </Link>
           </li>
         </ul>
       </div>

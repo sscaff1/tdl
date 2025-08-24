@@ -1,22 +1,38 @@
 import styles from './Hero.module.css';
+import Image from 'next/image';
 
 function Hero() {
   return (
-    <div className={styles.root}>
-      <div className={styles.side}>
-        <h1>Tour de Louisiane</h1>
-        <p>55th Annual Stage Race and LAMBRA Road Championship</p>
-        <a
-          href="https://www.bikereg.com/tour-de-louisiane-stage-race"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.callToAction}
-        >
-          Register Now
-        </a>
-      </div>
-      <div className={styles.side}>
-        <img src="/images/lambra_logo.png" alt="Tour de Louisiane" />
+    <div className={styles.hero}>
+      <div className={styles.overlay}>
+        <div className={styles.content}>
+          <div className={styles.textSection}>
+            <h1 className={styles.title}>Tour de Louisiane</h1>
+            <p className={styles.subtitle}>55th Annual Stage Race and LAMBRA Road Championship</p>
+            <div className={styles.dates}>
+              <p className={styles.dateRange}>Saturday & Sunday</p>
+              <p className={styles.specificDates}>May 18-19, 2024</p>
+            </div>
+            <a
+              href="https://www.bikereg.com/tour-de-louisiane-stage-race"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.callToAction}
+            >
+              Register Now
+            </a>
+          </div>
+          <div className={styles.logoSection}>
+            <Image
+              src="/images/lambra_logo.png"
+              alt="LAMBRA Logo"
+              width={200}
+              height={200}
+              className={styles.logo}
+              priority
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
