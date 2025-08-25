@@ -8,10 +8,6 @@
   min-height: 300px
 }
 
-.maps {
-  padding: 0 8px;
-}
-
 .aboutSection {
   padding: 80px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -24,18 +20,18 @@
   color: #2c5aa0;
   margin-bottom: 60px;
   position: relative;
-}
 
-.sectionTitle::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #2c5aa0, #e74c3c);
-  border-radius: 2px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #2c5aa0, #e74c3c);
+    border-radius: 2px;
+  }
 }
 
 .aboutContent {
@@ -58,11 +54,10 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border-left: 4px solid #2c5aa0;
   transition: all 0.3s ease;
-}
-
-.infoCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .cardTitle {
@@ -207,7 +202,7 @@
 
 @media (max-width: 768px) {
   .aboutSection {
-    padding: 60px 0;
+    padding: 32px 16px;
   }
 
   .sectionTitle {

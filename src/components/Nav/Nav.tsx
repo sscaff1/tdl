@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import { FaInstagram, FaFacebook, FaBars } from 'react-icons/fa';
 import styles from './Nav.module.css';
 import Image from 'next/image';
+import MobileMenu from './MobileMenu';
 
 function Nav() {
   return (
@@ -16,18 +18,45 @@ function Nav() {
           />
         </div>
 
-        <ul className={styles.navLinks}>
-          <li>
-            <Link href="/" className={styles.navLink}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/stages" className={styles.navLink}>
-              Schedule & Maps
-            </Link>
-          </li>
-        </ul>
+        {/* Desktop Navigation */}
+        <div className={styles.desktopNav}>
+          <ul className={styles.navLinks}>
+            <li>
+              <Link href="/" className={styles.navLink}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/stages" className={styles.navLink}>
+                Schedule & Maps
+              </Link>
+            </li>
+          </ul>
+
+          <div className={styles.socialLinks}>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile Menu - Client Component */}
+        <MobileMenu />
       </div>
     </nav>
   );

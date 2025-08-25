@@ -23,14 +23,42 @@ function Hero() {
             </a>
           </div>
           <div className={styles.logoSection}>
-            <Image
-              src="/images/lambra_logo.png"
-              alt="LAMBRA Logo"
-              width={200}
-              height={200}
-              className={styles.logo}
-              priority
-            />
+            <div className={styles.logoGrid}>
+              <div className={styles.logoRow}>
+                <div className={styles.logoItem}>
+                  <Image
+                    src="/images/hero/LAMBRA_logo_175_2017.png"
+                    alt="LAMBRA Logo"
+                    width={120}
+                    height={120}
+                    className={styles.heroLogo}
+                    priority
+                  />
+                </div>
+                <div className={styles.logoItem}>
+                  <Image
+                    src="/images/hero/usac_permit_2016_120.jpg"
+                    alt="USAC Permit"
+                    width={120}
+                    height={120}
+                    className={styles.heroLogo}
+                    priority
+                  />
+                </div>
+              </div>
+              <div className={styles.logoRow}>
+                <div className={styles.logoItem}>
+                  <Image
+                    src="/images/hero/NOBC-Logo-sm.jpg"
+                    alt="NOBC Logo"
+                    width={120}
+                    height={120}
+                    className={styles.heroLogo}
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
