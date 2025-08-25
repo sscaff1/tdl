@@ -58,7 +58,7 @@ export default function Home() {
               </div>
 
               <div className={styles.infoCard}>
-                <h3 className={styles.cardTitle}>Race Day Information</h3>
+                <h3 className={styles.cardTitle}>Road Race & TT Information</h3>
                 <div className={styles.raceDayContent}>
                   <div className={styles.timeInfo}>
                     <div className={styles.timeItem}>
@@ -78,6 +78,31 @@ export default function Home() {
                       19840 Lee Road
                       <br />
                       Franklinton, LA 70438
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.infoCard}>
+                <h3 className={styles.cardTitle}>Criterium Information</h3>
+                <div className={styles.raceDayContent}>
+                  <div className={styles.timeInfo}>
+                    <div className={styles.timeItem}>
+                      <span className={styles.timeLabel}>Registration Opens:</span>
+                      <span className={styles.timeValue}>6:30 a.m.</span>
+                    </div>
+                    <div className={styles.timeItem}>
+                      <span className={styles.timeLabel}>Registration Closes:</span>
+                      <span className={styles.timeValue}>7:30 a.m.</span>
+                    </div>
+                  </div>
+                  <div className={styles.locationInfo}>
+                    <h4 className={styles.locationTitle}>Location</h4>
+                    <p className={styles.locationText}>
+                      Lakeshore High School
+                      <br />
+                      26301 LA-1088
+                      <br />
+                      Mandeville, LA 70448
                     </p>
                   </div>
                 </div>
